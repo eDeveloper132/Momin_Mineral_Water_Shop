@@ -6,6 +6,8 @@
     <title>Document</title>
     <script src="index.mjs" type="module"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -13,10 +15,26 @@
         <input type="text" id="author" placeholder="Please Enter Your Author Name" required>
         <input type="text" id="name" placeholder="Please Enter Your Name" required>
         <input type="text" id="content" placeholder="Please Enter Your Message" required>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <div class="container">
 
+    
+    <div class="d-flex justify-content-center">
+        <table class="table">
+            <thead>
+              <tr class="justify-content-space-between">
+                <th scope="col">#</th>
+                <th scope="col">Author</th>
+                <th scope="col">Name</th>
+                <th scope="col">Content</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="container">
+                
+            </tbody>
+          </table>
     </div>
 </body>
 </html>
